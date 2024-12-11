@@ -1,21 +1,6 @@
 # Rviz_Motion
 
-change the sdf and urdf file plugins 
 
-sdf
-```
-<plugin filename="libignition-gazebo-diff-drive-system.so" name="ignition::gazebo::systems::DiffDrive">
-    <left_joint>left_wheel_joint</left_joint>
-    <right_joint>right_wheel_joint</right_joint>
-    <wheel_separation>0.1182</wheel_separation>
-    <wheel_radius>0.04</wheel_radius>
-    <odom_publish_frequency>50</odom_publish_frequency>
-    <odom_frame>odom</odom_frame> <!-- Specify the odometry frame -->
-    <robot_base_frame>base_link</robot_base_frame> <!-- Link base_link to odom -->
-    <topic>cmd_vel</topic>
-    <publish_tf>true</publish_tf> <!-- Ensure TF is published -->
-</plugin>
-```
 Make the odom_tf_publisher package. 
 
 go to erc_ws/src
